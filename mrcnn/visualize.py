@@ -123,6 +123,7 @@ def display_instances(image, boxes, masks, class_ids, class_names,
     N = boxes.shape[0]
     if not N:
         print("\n*** No instances to display *** \n")
+        return
     else:
         assert boxes.shape[0] == masks.shape[-1] == class_ids.shape[0]
 
